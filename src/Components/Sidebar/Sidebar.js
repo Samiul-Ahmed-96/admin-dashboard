@@ -1,4 +1,4 @@
-import { AutoGraphOutlined, LineStyleOutlined, TrendingDownOutlined } from '@mui/icons-material';
+import { AccountCircle, AddCommentOutlined, AutoGraphOutlined, EmailOutlined, LineStyleOutlined, ManageAccountsOutlined, MessageOutlined, PaidOutlined, ProductionQuantityLimitsOutlined, ReportGmailerrorredOutlined, TrendingDownOutlined } from '@mui/icons-material';
 import React from 'react';
 import './Sidebar.scss';
 
@@ -25,7 +25,68 @@ const Sidebar = () => {
                     
                     </ul>
                 </div>
-            </div>
+                <div className="sidebar-menu">
+                    <h3>Quick Menu</h3>
+                    <ul>
+                        <div className="menu-item">
+                        <AccountCircle/>
+                        <span>User</span>
+                        </div>
+                        <div className="menu-item">
+                        <ProductionQuantityLimitsOutlined/>
+                        <span>Products</span>
+                        </div>
+                        
+                        <div className="menu-item">
+                        <PaidOutlined/>
+                        <span>Transaction</span>
+                        </div>
+                        <div className="menu-item">
+                        <ReportGmailerrorredOutlined/>
+                        <span>Reports</span>
+                        </div>
+                    
+                    </ul>
+                </div>
+                </div>
+                <div className="sidebar-menu">
+                    <h3>Notifications</h3>
+                    <ul>
+                        <div className="menu-item">
+                        <EmailOutlined/>
+                        <span>Mail</span>
+                        </div>
+                        <div className="menu-item">
+                        <AddCommentOutlined/>
+                        <span>Feedback</span>
+                        </div>
+                        
+                        <div className="menu-item">
+                        <MessageOutlined/>
+                        <span>Message</span>
+                        </div>
+                    
+                    </ul>
+                </div>
+                <div className="sidebar-menu">
+                    <h3>Staff</h3>
+                    <ul>
+                        <div className="menu-item">
+                        <ManageAccountsOutlined/>
+                        <span>Manage</span>
+                        </div>
+                        <div className="menu-item">
+                        <TrendingDownOutlined/>
+                        <span>Analytics</span>
+                        </div>
+                        
+                        <div className="menu-item">
+                        <ReportGmailerrorredOutlined/>
+                        <span>Reports</span>
+                        </div>
+                    
+                    </ul>
+                </div>
         </div>
     );
 };
