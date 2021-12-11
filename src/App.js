@@ -2,6 +2,7 @@
 import './App.scss';
 import Navbar from './Components/Navbar/Navbar';
 import Sidebar from './Components/Sidebar/Sidebar';
+import Home from './Pages/Home/Home/Home';
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
         <Navbar/>
         <div className="container">
           <Sidebar/>
-          <div className="other">
-            
-          </div>
+          <Home/>
         </div>
     </div>
   );
