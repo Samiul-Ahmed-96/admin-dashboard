@@ -1,0 +1,18 @@
+.Transaction {
+  width: 70%;
+  .Transaction-table {
+    margin: 40px 0px;
+    .tr.MuiTableRow-root.MuiTableRow-head.css-1q1u3t4-MuiTableRow-root {
+      background: #e6e6e6;
+      box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    }
+    th.MuiTableCell-root {
+      font-weight: 600;
+    }
+  }
+}
+@media screen and (min-device-width: 250px) and (max-device-width: 640px) {
+  .Transaction {
+    width: 100%;
+  }
+}

@@ -1,9 +1,15 @@
 .home {
   width: 90%;
   background: #fff;
+  .members-transaction-container {
+    display: flex;
+  }
 }
 @media screen and (min-device-width: 250px) and (max-device-width: 640px) {
   .home {
     width: 100%;
+  }
+  .members-transaction-container {
+    flex-direction: column;
   }
 }
