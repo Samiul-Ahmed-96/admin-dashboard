@@ -27,7 +27,7 @@ const Transaction = () => {
     <div className='Transaction' >
     <h2>Transactions</h2>
     <TableContainer className='Transaction-table' component={Paper}>
-    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+    <Table sx={{ width : '100%' }} aria-label="simple table">
       <TableHead>
         <TableRow>
           <TableCell>Customer</TableCell>
