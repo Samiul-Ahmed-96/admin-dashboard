@@ -1,0 +1,35 @@
+.members-container {
+  width: 25%;
+  h2 {
+    margin: 0px 40px;
+  }
+  .members {
+    display: flex;
+    background: #e6e6e6;
+    margin: 40px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    img {
+      width: 40px;
+      border-radius: 10px;
+    }
+    .title-designation {
+      margin-left: 10px;
+    }
+    .action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #09097a;
+      padding: 10px;
+      color: #fff;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+}

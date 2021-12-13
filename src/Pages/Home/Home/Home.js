@@ -1,6 +1,7 @@
 import React from 'react';
 import Chart from '../Chart/Chart';
 import Featured from '../Featured/Featured';
+import Members from '../Members/Members';
 import './Home.scss';
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <div className='home'>
             <Featured/>
             <Chart/>
+            <Members/>
         </div>
     );
 };
