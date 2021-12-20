@@ -1,5 +1,6 @@
 import { AccountCircle, AddCommentOutlined, AutoGraphOutlined, EmailOutlined, LineStyleOutlined, ManageAccountsOutlined, MessageOutlined, PaidOutlined, ProductionQuantityLimitsOutlined, ReportGmailerrorredOutlined, TrendingDownOutlined } from '@mui/icons-material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.scss';
 
 const Sidebar = () => {
@@ -11,7 +12,7 @@ const Sidebar = () => {
                     <ul>
                         <div className="menu-item">
                         <LineStyleOutlined/>
-                        <span>Home</span>
+                        <Link to="/home"><span>Home</span></Link>
                         </div>
                         <div className="menu-item">
                         <AutoGraphOutlined/>
@@ -30,7 +31,7 @@ const Sidebar = () => {
                     <ul>
                         <div className="menu-item">
                         <AccountCircle/>
-                        <span>User</span>
+                        <Link to="/user"><span>User</span></Link>
                         </div>
                         <div className="menu-item">
                         <ProductionQuantityLimitsOutlined/>

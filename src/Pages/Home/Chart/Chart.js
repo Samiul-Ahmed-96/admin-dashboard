@@ -1,5 +1,5 @@
 import React from 'react';
-import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 import './Chart.scss';
 
 
@@ -51,24 +51,13 @@ const Chart = () => {
     return (
         <div className='chart'>
         <h2>Users Analytics</h2>
-        <ResponsiveContainer width="100%" aspect={4/1}>
-          <LineChart
-            width={500}
-            height={300}
-            data={data}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
-          >
+        <ResponsiveContainer sx={{width:"100%" , padding : "10px"}} aspect={4/1}>
+          <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
+            <XAxis dataKey="name" stroke='#09097a'/>
             <Tooltip />
             <Legend />
-            <Line type="monotone" dataKey="pv" stroke="#09097a" activeDot={{ r: 8 }} />
+            <Line type="monotone" dataKey="Active User" stroke="#09097a" activeDot={{ r: 8 }} />
             <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
           </LineChart>
       </ResponsiveContainer>

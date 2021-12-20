@@ -13,11 +13,11 @@ function createData(name, date, amount, status, designation) {
 }
 
   const rows = [
-    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved', 'Engineer'),
-    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved', 'Engineer'),
-    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved', 'Engineer'),
-    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved', 'Engineer'),
-    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved', 'Engineer'),
+    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved'),
+    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved'),
+    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved'),
+    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved'),
+    createData('Samiul Ahmed', '3 jan 2021', '$123.00', 'Approved'),
   ];
 
 
@@ -34,7 +34,6 @@ const Transaction = () => {
           <TableCell align="right">Date</TableCell>
           <TableCell align="right">Amount</TableCell>
           <TableCell align="right">Status</TableCell>
-          <TableCell align="right">Designation</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -48,8 +47,7 @@ const Transaction = () => {
             </TableCell>
             <TableCell align="right">{row.date}</TableCell>
             <TableCell align="right">{row.amount}</TableCell>
-            <TableCell align="right">{row.status}</TableCell>
-            <TableCell align="right">{row.designation}</TableCell>
+            <TableCell className='status' align="right">{row.status}</TableCell>
           </TableRow>
         ))}
       </TableBody>
