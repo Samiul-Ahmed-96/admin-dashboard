@@ -1,4 +1,5 @@
 import { DataGrid } from '@material-ui/data-grid';
+import { DeleteOutline } from '@mui/icons-material';
 import React from 'react';
 import './User.scss';
 
@@ -8,7 +9,7 @@ const User = () => {
         {
           field: 'user',
           headerName: 'User',
-          width: 150,
+          width: 300,
           editable: true,
           renderCell : (params) =>{
             return(
@@ -22,23 +23,32 @@ const User = () => {
         {
           field: 'transaction',
           headerName: 'Transaction',
-          width: 150,
+          width: 200,
           editable: true,
         },
         {
           field: 'email',
           headerName: 'Email',
-          width: 200,
+          width: 300,
         },
         {
           field: 'status',
           headerName: 'Status',
-          width: 120,
+          width: 200,
         },
         {
           field: 'action',
           headerName: 'Action',
           width: 120,
+          renderCell : (params) =>{
+            return(
+              <div className='action-container'>
+                <button className='userEdit'>Edit</button>
+                <DeleteOutline className='userDelete'/>
+              </div>
+              
+            )
+          }
         }
       ];
       
@@ -59,11 +69,10 @@ const User = () => {
     return (
         <div className='user-container'>
             <div className="user-table">
-            <div style={{ height: '100vh', width: '100vw' }}>
+            <div style={{ height: '100vh', width: '100%' }}>
             <DataGrid
               rows={rows}
               columns={columns}
-              pageSize={5}
               checkboxSelection
               disableSelectionOnClick
             />
