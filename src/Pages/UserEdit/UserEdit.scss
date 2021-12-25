@@ -1,0 +1,39 @@
+.user-container {
+  padding: 20px;
+  .usertitle {
+    display: flex;
+    justify-content: space-between;
+    .createNewUser {
+      background: #09097a;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .user-info-edit {
+    background: #e6e6e6;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    #user-info-update {
+      background: #09097a;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+.MuiFormControl-root.MuiTextField-root.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+  display: block;
+  margin: 20px 0px;
+}
+.user-info-edit input {
+  display: block;
+  margin: 20px 0px;
+}
