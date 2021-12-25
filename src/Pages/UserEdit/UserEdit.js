@@ -1,5 +1,6 @@
 import { TextField } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './UserEdit.scss';
 
 const UserEdit = () => {
@@ -7,7 +8,7 @@ const UserEdit = () => {
         <div className='user-container'>
             <div className="usertitle">
                 <h1>Create User</h1>
-                <button className='createNewUser'>Create</button>
+                <Link to="/CreateUser"><button className='createNewUser'>Create</button></Link>
             </div>
             <div className="user-info-edit">
                 <h1>Edit User</h1>
