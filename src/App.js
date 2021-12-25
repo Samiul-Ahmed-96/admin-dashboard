@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Sidebar from './Components/Sidebar/Sidebar';
 import CreateUser from "./Pages/CreateUser/CreateUser";
 import Home from './Pages/Home/Home/Home';
+import Products from "./Pages/Products/Products";
 import User from "./Pages/User/User";
 import UserEdit from "./Pages/UserEdit/UserEdit";
 
@@ -20,6 +21,7 @@ function App() {
      <Route path="/" element={<Home />} />
      <Route path="/home" element={<Home />} />
      <Route path="/user" element={<User />} />
+     <Route path="/products" element={<Products />} />
      <Route path="/CreateUser" element={<CreateUser />} />
      <Route path="/user/:userId" element={<UserEdit />} />
      </Routes>

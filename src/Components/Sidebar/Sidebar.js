@@ -35,7 +35,7 @@ const Sidebar = () => {
                         </div>
                         <div className="menu-item">
                         <ProductionQuantityLimitsOutlined/>
-                        <span>Products</span>
+                        <Link to="/products"><span>Products</span></Link>
                         </div>
                         
                         <div className="menu-item">

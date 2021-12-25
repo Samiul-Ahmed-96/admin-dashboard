@@ -1,0 +1,41 @@
+.products-container {
+  width: 85%;
+  padding: 20px;
+  .user-info {
+    display: flex;
+    align-items: center;
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+  }
+}
+.action-container {
+  display: flex;
+  align-items: center;
+  .productsEdit {
+    background: #11bf31;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .userDelete {
+    color: crimson;
+    font-size: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+.user-table {
+  padding: 40px;
+}
+@media screen and (min-device-width: 250px) and (max-device-width: 640px) {
+  .user-container {
+    width: 100%;
+  }
+}
