@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Home from './Pages/Home/Home/Home';
 import User from "./Pages/User/User";
+import UserEdit from "./Pages/UserEdit/UserEdit";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
      <Route path="/" element={<Home />} />
      <Route path="/home" element={<Home />} />
      <Route path="/user" element={<User />} />
+     <Route path="/user/:userId" element={<UserEdit />} />
      </Routes>
    </div>  
 </div>

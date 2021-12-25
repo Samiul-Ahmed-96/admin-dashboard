@@ -1,6 +1,7 @@
 import { DataGrid } from '@material-ui/data-grid';
 import { DeleteOutline } from '@mui/icons-material';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './User.scss';
 
 const User = () => {
@@ -43,7 +44,7 @@ const User = () => {
           renderCell : (params) =>{
             return(
               <div className='action-container'>
-                <button className='userEdit'>Edit</button>
+                <Link to={"/user/"+params.row.id}><button className='userEdit'>Edit</button></Link>
                 <DeleteOutline className='userDelete'/>
               </div>
               
