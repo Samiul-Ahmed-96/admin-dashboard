@@ -1,0 +1,33 @@
+.create-user {
+  padding: 40px;
+  width: 100%;
+}
+
+form.create-user-form label {
+  margin: 10px 0px;
+}
+
+form.create-user-form select {
+  display: block;
+  margin: 10px 0px;
+}
+
+form.create-user-form input {
+  display: block;
+  margin: 10px 0px;
+}
+form.create-user-form {
+  background: #e6e6e6;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+#create-user-btn {
+  background: #09097a;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}

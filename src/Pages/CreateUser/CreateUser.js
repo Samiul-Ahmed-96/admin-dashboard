@@ -1,11 +1,12 @@
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from '@mui/material';
 import React from 'react';
+import "./CreateUser.scss";
 
 const CreateUser = () => {
     return (
         <div className='create-user'>
            <h2>Create User</h2>
-           <form>
+           <form className='create-user-form'>
            <TextField id="standard-basic" label="User Name" variant="standard" />
            <TextField id="standard-basic" label="Full Name" variant="standard" />
            <TextField id="standard-basic" label="Email" variant="standard" />
@@ -28,7 +29,7 @@ const CreateUser = () => {
              <FormControlLabel value="other" control={<Radio />} label="Other" />
            </RadioGroup>
          </FormControl>
-         <input type="submit" value="Create User" />
+         <input type="submit" id="create-user-btn" value="Create User" />
 
          
            </form>
