@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
 import Navbar from './Components/Navbar/Navbar';
 import Sidebar from './Components/Sidebar/Sidebar';
+import AddProduct from "./Pages/AddProduct/AddProduct";
 import CreateUser from "./Pages/CreateUser/CreateUser";
 import Home from './Pages/Home/Home/Home';
 import ProductEdit from "./Pages/ProductEdit/ProductEdit";
@@ -24,6 +25,7 @@ function App() {
      <Route path="/user" element={<User />} />
      <Route path="/products" element={<Products />} />
      <Route path="/CreateUser" element={<CreateUser />} />
+     <Route path="/addProduct" element={<AddProduct />} />
      <Route path="/user/:userId" element={<UserEdit />} />
      <Route path="/products/:productId" element={<ProductEdit />} />
      </Routes>

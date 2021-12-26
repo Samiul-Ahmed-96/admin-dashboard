@@ -8,7 +8,7 @@ const ProductEdit = () => {
         <div className='user-container'>
             <div className="usertitle">
                 <h1>Product</h1>
-                <Link to="/CreateUser"><button className='createNewUser'>Add Product</button></Link>
+                <Link to="/addProduct"><button className='createNewUser'>Add Product</button></Link>
             </div>
             <div className="user-info-edit">
                 <h1>Edit Product</h1>
